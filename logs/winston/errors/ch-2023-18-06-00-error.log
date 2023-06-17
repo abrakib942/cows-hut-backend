@@ -1,0 +1,13 @@
+Sun Jun 18 2023 0:19:20 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ User validation failed: income: Path `income` is required., budget: Path `budget` is required., address: Path `address` is required., password: Path `password` is required., phoneNumber: Path `phoneNumber` is required.
+Sun Jun 18 2023 0:20:26 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ User validation failed: address: Path `address` is required., password: Path `password` is required., phoneNumber: Path `phoneNumber` is required.
+Sun Jun 18 2023 0:23:34 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 duplicate key error collection: test.users index: id_1 dup key: { id: null }
+Sun Jun 18 2023 0:23:57 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 duplicate key error collection: test.users index: id_1 dup key: { id: null }
+Sun Jun 18 2023 0:24:20 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 duplicate key error collection: test.users index: id_1 dup key: { id: null }
+Sun Jun 18 2023 0:25:23 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 duplicate key error collection: test.users index: id_1 dup key: { id: null }
+Sun Jun 18 2023 0:26:20 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 duplicate key error collection: test.users index: id_1 dup key: { id: null }
+Sun Jun 18 2023 0:29:43 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ User validation failed: role: `jkhkj` is not a valid enum value for path `role`.
+Sun Jun 18 2023 0:30:2 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 duplicate key error collection: test.users index: id_1 dup key: { id: null }
+Sun Jun 18 2023 0:31:12 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 duplicate key error collection: test.users index: id_1 dup key: { id: null }
+Sun Jun 18 2023 0:33:21 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 duplicate key error collection: test.users index: id_1 dup key: { id: null }
+Sun Jun 18 2023 0:35:0 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 duplicate key error collection: test.users index: id_1 dup key: { id: null }
+Sun Jun 18 2023 0:45:18 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot convert undefined or null to object

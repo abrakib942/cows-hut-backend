@@ -3,11 +3,6 @@ import { IUser, UserModel } from "./user.interface";
 
 const userSchema = new Schema<IUser>(
   {
-    id: {
-      type: String,
-      required: true,
-      unique: true,
-    },
     phoneNumber: {
       type: String,
       required: true,
@@ -35,6 +30,7 @@ const userSchema = new Schema<IUser>(
           required: false,
         },
       },
+      required: true,
     },
     address: {
       type: String,
@@ -46,7 +42,7 @@ const userSchema = new Schema<IUser>(
     },
     income: {
       type: Number,
-      required: true,
+      required: false,
     },
   },
   {
