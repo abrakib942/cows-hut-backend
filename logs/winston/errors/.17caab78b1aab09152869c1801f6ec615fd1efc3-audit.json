@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Apollo PH level2\\cows-hut\\logs\\winston\\errors\\.17caab78b1aab09152869c1801f6ec615fd1efc3-audit.json",
+    "files": [
+        {
+            "date": 1686983975924,
+            "name": "D:\\Apollo PH level2\\cows-hut\\logs\\winston\\errors\\ch-2023-17-06-12-error.log",
+            "hash": "7a45b62d12e5068e03e6f420f86ce73e421fd1144866c16dc6c1b7f512783dfa"
+        }
+    ],
+    "hashType": "sha256"
+}
