@@ -1,1 +1,4 @@
 Sun Jun 18 2023 9:38:57 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 duplicate key error collection: test.users index: id_1 dup key: { id: null }
+Sun Jun 18 2023 9:40:8 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 duplicate key error collection: test.users index: id_1 dup key: { id: null }
+Sun Jun 18 2023 9:41:26 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 duplicate key error collection: test.users index: id_1 dup key: { id: null }
+Sun Jun 18 2023 9:42:16 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 duplicate key error collection: test.users index: id_1 dup key: { id: null }
