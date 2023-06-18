@@ -1,11 +1,13 @@
 import { Schema, model } from "mongoose";
 import { IUser, UserModel } from "./user.interface";
+import ApiError from "../../../errors/ApiError";
 
 const userSchema = new Schema<IUser>(
   {
     phoneNumber: {
       type: String,
       required: true,
+      unique: true,
     },
     role: {
       type: String,
@@ -49,5 +51,31 @@ const userSchema = new Schema<IUser>(
     },
   }
 );
+
+userSchema.pre("save", async function (next) {
+  const isExistByName = await User.findOne({
+    name: {
+      firstName: this.name.firstName,
+      lastName: this.name.lastName,
+    },
+  });
+  const isExistByPhoneNumber = await User.findOne({
+    phoneNumber: this.phoneNumber,
+  });
+
+  if (isExistByName) {
+    throw new ApiError(
+      400,
+      "User with name `" + this.name + "` already exist !"
+    );
+  } else if (isExistByPhoneNumber) {
+    throw new ApiError(
+      400,
+      "User with phone number `" + this.phoneNumber + "` already exist !"
+    );
+  }
+
+  next();
+});
 
 export const User = model<IUser, UserModel>("User", userSchema);
