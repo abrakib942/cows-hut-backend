@@ -55,3 +55,8 @@ Sun Jun 18 2023 13:15:57 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ [
     "message": "income is required"
   }
 ]
+Sun Jun 18 2023 13:16:31 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ User with name `{ firstName: 'Raib', lastName: 'B' }` already exist !
+Sun Jun 18 2023 13:35:25 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ Cow validation failed: seller: Path `seller` is required.
+Sun Jun 18 2023 13:39:48 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot populate path `User` because it is not in your schema. Set the `strictPopulate` option to false to override.
+Sun Jun 18 2023 13:42:2 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot populate path `user` because it is not in your schema. Set the `strictPopulate` option to false to override.
+Sun Jun 18 2023 13:42:37 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot populate path `users` because it is not in your schema. Set the `strictPopulate` option to false to override.
