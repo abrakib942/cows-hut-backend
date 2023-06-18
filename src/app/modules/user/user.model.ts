@@ -37,7 +37,7 @@ const userSchema = new Schema<IUser>(
     },
     budget: {
       type: Number,
-      required: true,
+      required: false,
       default: 0,
     },
     income: {

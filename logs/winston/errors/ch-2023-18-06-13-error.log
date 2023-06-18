@@ -1,0 +1,57 @@
+Sun Jun 18 2023 13:10:24 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "name"
+    ],
+    "message": "Required"
+  }
+]
+Sun Jun 18 2023 13:10:54 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ User with name `{ firstName: 'Raib', lastName: 'B' }` already exist !
+Sun Jun 18 2023 13:15:25 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "undefined",
+    "path": [
+      "body",
+      "budget"
+    ],
+    "message": "budget is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "undefined",
+    "path": [
+      "body",
+      "income"
+    ],
+    "message": "income is required"
+  }
+]
+Sun Jun 18 2023 13:15:57 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "undefined",
+    "path": [
+      "body",
+      "budget"
+    ],
+    "message": "budget is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "undefined",
+    "path": [
+      "body",
+      "income"
+    ],
+    "message": "income is required"
+  }
+]

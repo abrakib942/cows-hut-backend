@@ -49,6 +49,11 @@
             "date": 1687071032935,
             "name": "D:\\Apollo PH level2\\cows-hut\\logs\\winston\\errors\\ch-2023-18-06-12-error.log",
             "hash": "899fb8ef226e1ee7b3c03edf284059ca6a9a63d1e9b87940de09b8324a1c540a"
+        },
+        {
+            "date": 1687072224619,
+            "name": "D:\\Apollo PH level2\\cows-hut\\logs\\winston\\errors\\ch-2023-18-06-13-error.log",
+            "hash": "131fc647dea0fc5cfa833b334b1e695074268919a62344b86c6a0581e2375d70"
         }
     ],
     "hashType": "sha256"
