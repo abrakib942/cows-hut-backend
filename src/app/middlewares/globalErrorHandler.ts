@@ -4,7 +4,6 @@ import ApiError from "../../errors/ApiError";
 import handleValidationError from "../../errors/handleValidationError";
 import handleCastError from "../../errors/handleCastError";
 import { IGenericErrorMessage } from "../../interfaces/error";
-import { errorLogger } from "../../shared/logger";
 import handleZodError from "../../errors/handleZodError";
 import { ZodError } from "zod";
 

@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 import app from "./app";
 import config from "./config";
-import { errorLogger, logger } from "./shared/logger";
 
 const port: number = 5000;
 
