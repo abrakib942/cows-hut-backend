@@ -19,8 +19,25 @@ const getSingleCow = async (id: string): Promise<ICow | null> => {
   return result;
 };
 
+const updateCow = async (id: string, payload: ICow): Promise<ICow | null> => {
+  const result = await Cow.findByIdAndUpdate({ _id: id }, payload, {
+    new: true,
+    runValidators: true,
+  }).populate("seller");
+
+  return result;
+};
+
+const deleteCow = async (id: string): Promise<ICow | null> => {
+  const result = await Cow.findByIdAndDelete(id);
+
+  return result;
+};
+
 export const CowService = {
   createCow,
   getAllCows,
   getSingleCow,
+  updateCow,
+  deleteCow,
 };
