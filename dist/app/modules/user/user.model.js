@@ -65,26 +65,29 @@ const userSchema = new mongoose_1.Schema({
 });
 userSchema.pre("save", function (next) {
     return __awaiter(this, void 0, void 0, function* () {
-        const isExistByName = yield exports.User.findOne({
-            name: {
-                firstName: this.name.firstName,
-                lastName: this.name.lastName,
-            },
-        });
-        const isExistByPhoneNumber = yield exports.User.findOne({
-            phoneNumber: this.phoneNumber,
-        });
-        if (isExistByName) {
-            throw new ApiError_1.default(400, "User with name `" + this.name + "` already exist !");
-        }
-        else if (isExistByPhoneNumber) {
-            throw new ApiError_1.default(400, "User with phone number `" + this.phoneNumber + "` already exist !");
-        }
-        if (this.role === "seller") {
-            this.budget = 0;
-        }
-        else if (this.role === "buyer") {
-            this.income = 0;
+        if (this.isNew) {
+            // Only run the validation for new user creation
+            const isExistByName = yield exports.User.findOne({
+                name: {
+                    firstName: this.name.firstName,
+                    lastName: this.name.lastName,
+                },
+            });
+            const isExistByPhoneNumber = yield exports.User.findOne({
+                phoneNumber: this.phoneNumber,
+            });
+            if (isExistByName) {
+                throw new ApiError_1.default(400, "User with name `" + this.name + "` already exists!");
+            }
+            else if (isExistByPhoneNumber) {
+                throw new ApiError_1.default(400, "User with phone number `" + this.phoneNumber + "` already exists!");
+            }
+            if (this.role === "seller") {
+                this.budget = 0;
+            }
+            else if (this.role === "buyer") {
+                this.income = 0;
+            }
         }
         next();
     });
