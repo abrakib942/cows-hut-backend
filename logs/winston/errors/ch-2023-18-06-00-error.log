@@ -11,3 +11,16 @@ Sun Jun 18 2023 0:31:12 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 d
 Sun Jun 18 2023 0:33:21 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 duplicate key error collection: test.users index: id_1 dup key: { id: null }
 Sun Jun 18 2023 0:35:0 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 duplicate key error collection: test.users index: id_1 dup key: { id: null }
 Sun Jun 18 2023 0:45:18 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot convert undefined or null to object
+Sun Jun 18 2023 0:49:42 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ E11000 duplicate key error collection: test.users index: id_1 dup key: { id: null }
+Sun Jun 18 2023 0:50:7 } [CH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "name"
+    ],
+    "message": "Required"
+  }
+]

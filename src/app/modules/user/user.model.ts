@@ -16,21 +16,18 @@ const userSchema = new Schema<IUser>(
       required: true,
     },
     name: {
-      type: {
-        firstName: {
-          type: String,
-          required: true,
-        },
-        lastName: {
-          type: String,
-          required: true,
-        },
-        middleName: {
-          type: String,
-          required: false,
-        },
+      firstName: {
+        type: String,
+        required: true,
       },
-      required: true,
+      lastName: {
+        type: String,
+        required: true,
+      },
+      middleName: {
+        type: String,
+        required: false,
+      },
     },
     address: {
       type: String,
