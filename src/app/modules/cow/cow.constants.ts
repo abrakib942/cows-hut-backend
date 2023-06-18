@@ -20,3 +20,14 @@ export const breed = [
 ];
 
 export const paginationFields = ["page", "limit", "sortBy", "sortOrder"];
+
+export const cowsSearchableFields = ["location", "breed", "category"];
+
+export const cowsFilterableFields = [
+  "searchTerm",
+  "minPrice",
+  "maxPrice",
+  "location",
+  "breed",
+  "category",
+];

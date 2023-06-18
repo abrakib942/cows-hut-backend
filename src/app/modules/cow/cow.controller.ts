@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import { CowService } from "./cow.service";
 import pick from "../../../shared/pick";
-import { paginationFields } from "./cow.constants";
+import { cowsFilterableFields, paginationFields } from "./cow.constants";
 import { IPaginationOptions } from "../../../interfaces/pagination";
 
 const createCow = async (req: Request, res: Response, next: NextFunction) => {
@@ -21,12 +21,15 @@ const createCow = async (req: Request, res: Response, next: NextFunction) => {
 
 const getAllCows = async (req: Request, res: Response, next: NextFunction) => {
   try {
+    const filters = pick(req.query, cowsFilterableFields);
+
     const paginationOptions: Partial<IPaginationOptions> = pick(
       req.query,
       paginationFields
     );
 
     const result = await CowService.getAllCows(
+      filters,
       paginationOptions as IPaginationOptions
     );
 
