@@ -20,6 +20,7 @@ const updateUser = async (
 ): Promise<IUser | null> => {
   const result = await User.findOneAndUpdate({ _id: id }, payload, {
     new: true,
+    runValidators: true,
   });
 
   return result;

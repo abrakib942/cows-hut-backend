@@ -38,10 +38,12 @@ const userSchema = new Schema<IUser>(
     budget: {
       type: Number,
       required: true,
+      default: 0,
     },
     income: {
       type: Number,
       required: false,
+      default: 0,
     },
   },
   {
@@ -73,6 +75,12 @@ userSchema.pre("save", async function (next) {
       400,
       "User with phone number `" + this.phoneNumber + "` already exist !"
     );
+  }
+
+  if (this.role === "seller") {
+    this.budget = 0;
+  } else if (this.role === "buyer") {
+    this.income = 0;
   }
 
   next();
