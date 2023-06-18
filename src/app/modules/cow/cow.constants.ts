@@ -18,3 +18,5 @@ export const breed = [
   "Tharparkar",
   "Kankrej",
 ];
+
+export const paginationFields = ["page", "limit", "sortBy", "sortOrder"];
