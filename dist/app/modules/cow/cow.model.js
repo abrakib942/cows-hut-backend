@@ -45,5 +45,10 @@ const cowSchema = new mongoose_1.Schema({
         ref: "User",
         required: true,
     },
+}, {
+    timestamps: true,
+    toJSON: {
+        virtuals: true,
+    },
 });
 exports.Cow = (0, mongoose_1.model)("Cow", cowSchema);
